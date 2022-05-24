@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sinnot Technologies</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light py-3" id="navbar">  
+        <div class="container">
+            <span class="logoText"><a href="home.html" class="text-white"> <strong style="color: white font-size:28px;">SINNOT</strong>technologies</a></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                   <li class="nav-item">
+                        <a class="nav-link" href="homes.html">Home<span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item quote-nav ">
+                        <a class="nav-link" href="RFQ.html">Request a Quote</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+    <section class="banner">
+        <div class="carousel slide" id="carouselControls" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/gal8.jpg" alt="First slide" class="d-block w-100 home-slider-img">
+                    <div class="overlay"></div>
+                    <div class="slide-text container text-center" id="home-text">
+                        <h1>Sinnot Technologies</h1>
+                        <h2 class="subheading">Solving Energy poverty In Africa</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bg1.PNG" alt="Second-slide" class="d-block w-100 home-slider-img">
+                    <div class="overlay"></div>
+                    <div class="slide-text container text-center" id="home-text">
+                        <h1>Sinnot Technologies</h1>
+                        <h2 class="subheading">Solving Energy Poverty In Africa.</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/gal2.PNG" alt="Third slide" class="d-block w-100 home-slider-img">
+                    <div class="overlay"></div>
+                    <div class="slide-text container text-center" id="home-text">
+                        <h1>Sinnot Technologies</h1>
+                        <h2 class="subheading">Solving Energy Poverty In Africa.</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/bg3.jpg" alt="Third slide" class="d-block w-100 home-slider-img">
+                    <div class="overlay"></div>
+                    <div class="slide-text container text-center" id="home-text">
+                        <h1>Sinnot Technologies</h1>
+                        <h2 class="subheading">Solving Energy Poverty In Africa.</h2>
+                    </div>
+                </div>
+            </div>
+            <a href="{% static '#carouselControls' %}" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a href="{% static '#carouselControls' %}" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <section class=" bg-light" >
+        <div class="container welcome px-4">
+            <div class=" row py-5">
+                <div class="col-lg-6 my-md-3">
+                    <h1> Welcome To Sinnot Technologies </h1>
+                    <p class="py-1 text-muted" >
+                        Sinnot Technologies Limited is a clean energy technology company dedicated to solving energy poverty in Africa through rendering unbeatable solar solution services (Micro or Mini grid), producing affordable quality local inverters, advancing on innovation, creativity, researches and training on various clean energy technology that provide solutions to energy challenges and climate change in Africa.
+                    </p>
+                    <span class="read-more p-3 text-center"  > <a class="text-white" href="about.html#brief">Read More</a></span>
+                </div>
+                <img class="col-lg-6 mt-md-5" src="img/solar-house.jpg" alt="" height="350px" >  
+            </div>
+        </div>
+    </section>
+
+    <section class="services bg-white" id="services">
+        <div class="container text-center mt-5 p-4">
+            <h1 class="subheading">Services We Render</h1>
+            <p class="text-muted h5" > We offer top end services to our ever satisfied customer population</p>
+            
+            <div class="row justify-content-center mb-5">
+                <ul class="nav nav-tabs my-3" id="pills-tab" role="tablist">
+                    <li class="nav-item tabs">
+                        <a href="#pills-solar" class="nav-link active" id="pills-solar-tab" data-toggle="pill" role="tab" aria-controls="pills-solar" aria-selected="true">Solar Inverter</a>
+                    </li>
+                    <li class="nav-item tabs">
+                        <a href="#pills-electrical" class="nav-link" id="pills-electrical-tab" data-toggle="pill" role="tab" aria-controls="pills-electrical" aria-selected="true">Electrical Services</a>
+                    </li>
+                    <li class="nav-item tabs">
+                        <a href="#pills-Energy" class="nav-link" id="pills-Energy-tab" data-toggle="pill" role="tab" aria-controls="pills-Energy" aria-selected="true">Renewable Energy Consultancy</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active justify-content-center" id="pills-solar" role="tabpanel" aria-labelledby="pills-solar-tab">
+                        <div class="card-body">
+                            <h5 class="card-title">We offer the sales and installation of top-end solar inverters.</h5>
+                        </div>
+                        <div class="service-packet">
+                            <div class="card">
+                                <img src="img/solar.jpg" class="card-img-top img-fluid" alt="">
+                                <div class="service-overlay"></div>
+                                
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-electrical" role="tabpanel" aria-labelledby="pills-electrical-tab">
+                        <div class="card-body">
+                            <h5 class="card-title">We have highly skilled engineers to provide you top-notch service for anything electrical</h5>
+                        </div>
+                        <div class="service-packet">
+                            <div class="card">
+                                <img src="img/electservice.jpg" class="card-img-top img-fluid" alt="">
+                                <div class="service-overlay"></div>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Energy" role="tabpanel" aria-labelledby="pills-training-tab">
+                        <div class="card-body">
+                            <h5 class="card-title">We have highly qualified and experienced personnel to offer consultation on renewable energy.</h5>
+                        </div>
+                        <div class="mb-5 ml-4 service-packet">
+                            <div class="card">
+                                <img src="img/aboutus.jpg" class="card-img-top img-fluid" alt="">
+                                <div class="service-overlay"></div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <span class="read-more p-3 text-center"  > <a class="text-white" href="services.html#services">Read More</a></span>           
+        </div>
+    </section>
+
+    <section class="services bg-white" id="services">
+        <div class="container text-center mt-5 p-4">
+            <h1 class="subheading">Sinnot Solar Packages</h1>
+            <p class="text-muted h5"> The various service package we offer to our customers</p>
+            <div class="row">
+                <Div class="my-5 col-lg-6">
+                    <div class="card">
+                        <img src="img/Mini_package.jpeg" class="card-img-top" alt="">
+                        <div class="card-body text-left text-muted" id="card-body">
+                            <h3 style="color:#065174;">Sinnot Home Mini</h3>
+                            <strong>Specification:</strong> 150W panel 100AH Battery <br>
+                            
+                                <li>3 LED bulb</li>
+                                <li>1 Small fan</li>
+                                <li>Clippeer</li>
+                                <li>Phones</li>
+    
+                            <b class="text-left">Cost</b> 150,000 naira(Once-off Payment)
+
+                        </div>
+                        <a href="RFQ.html#quotation" class="package_button"><button class=" p-3 bg-info text-white">Request a Quote</button></a></button>
+                    </div>
+                </Div>
+                <Div class="my-5 col-lg-6">
+                    <div class="card">
+                        <img src="img/Basic_Package.jpeg" class="card-img-top" alt="">
+                        <div class="card-body text-left text-muted" id="card-body">
+                            <h3 style="color:#065174;">Sinnot Home Basic</h3>
+                            <strong>Specification:</strong> 300W panel 200AH Battery <br>
+                            
+                                <li>6 LED bulb</li>
+                                <li>1 TV with Decoder</li>
+                                <li>1 Small fan</li>
+                                <li>Blender, Phones, Clippeer</li>
+    
+                            <b class="text-left">Cost</b> 230,000 naira(Once-off Payment)
+
+                        </div>
+                        <a href="RFQ.html#quotation" class="package_button"><button class=" p-3 bg-info text-white">Request a Quote</button></a>
+                    </div>
+                </Div>
+            </div>
+        </div>
+        
+    </section>
+    <footer class="global-footer footer mt-auto py-3">
+        <div class="container">
+            <div class="row mb-8 text-muted">
+                <div class="col-md-3">
+                    <div class="global-footer-widget">
+                        <h2 >Menu</h2>
+                        <ul class="list-unstyled" >
+                            <li><a href="home.html" class="py-2 d-block text-muted">Home</a></li>
+                            <li><a href="about.html" class="py-2 d-block text-muted">About</a></li>
+                            <li><a href="services.html" class="py-2 d-block text-muted">Services</a></li>
+                            <li><a href="contact.html" class="py-2 d-block text-muted">Contact Us</a></li>
+                            <li><a href="gallery.html" class="py-2 d-block text-muted">gallery</a></li>
+                            <li><a href="RFQ.html" class="py-2 d-block text-muted">Request For Quote</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="global-footer-widget mx-md-3" id="footer-social">
+                        <h2 >Sinnot Technologies</h2>
+                        <p>Solving Energy poverty In Africa</p>
+                        <ul class="global-footer-social list-unstyled mt-1">
+                            <li><a href="https://twitter.com/sinnot_tech?lang=en"><span class="icon-twitter text-muted"></span></a></li>
+                            <li><a href="https://www.facebook.com/Sinnottechnologies/"><span class="icon-facebook text-muted"></span></a></li>
+                            <li><a href="https://www.instagram.com/p/BpgRtspFK15/"><span class="icon-instagram text-muted"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="gloabl-footer-widget">
+                        <h2 id="haq" >Visit us</h2>
+                        <div class="block-23 pt-2">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text"> <b> Lagos Office:</b> 198, Ikorodu Road Palmgrove, Lagos State. <br> <b> Akure Office:</b> Flat 2, Behind IBI Petrol Station, Roadblock, Akure, Ondo State.</span></li>
+                                <li><span class="icon icon-phone"></span><span class="text"> +234 806 811 8888 | +234 915 522 5512</span></li>
+                                <li><a href="#"><span class="icon icon-envelope text-muted"></span><span class="text text-muted">sinnottechnologies123@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <scriptt src="js/jquery-migrate-3.0.1.min.js"></script>
+    <scriptt src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

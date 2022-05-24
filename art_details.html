@@ -1,0 +1,42 @@
+{%extends 'g-template.html'%}
+{%load static%}
+{%block content%}
+
+
+<section>
+    <section class="banner">
+        <div class="other-image home-image" style="background-image: url({%static 'img/banner2.jpg' %});">
+        <div class="overlay"></div>
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                <div class="col-sm-12 text-center" id="home-text">
+                    <h1>ARTICLE DETAILS</h1>
+                    <h2 class="subheading">Solving Energy poverty In Africa</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="news-details">
+        
+        <div class="art-detail container my-5">
+            <div class="row">
+                <div class="article-title">
+                    <h3>{{collection.title}}</h3>
+                    <p class="text-muted">{{collection.date}}</p>
+                </div>        
+            </div>
+            <hr> <br>   
+            <div class="row">
+                <img id="news-detail-img" class="mt-1 mr-2 col-lg-8 col-md-12 mb-3" src="{{collection.thumb.url}}" alt="news-article-img">
+            </div>
+            <div class="row justify-content-center">
+                <div class="main-art p-md-2">
+                    <p class="mt-1">{{collection.body}}</p>
+                </div>
+            </div>
+            <br><hr>
+        </div>
+            
+    </div>
+
+{%endblock%}

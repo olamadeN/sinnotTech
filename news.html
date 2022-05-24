@@ -1,0 +1,74 @@
+{% extends 'g-template.html' %}
+{%load static%}
+{%block content%}
+    <section>
+        
+        <section class="banner">
+            <div class="other-image home-image" style="background-image: url({%static 'img/banner2.jpg' %});">
+            <div class="overlay"></div>
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                    <div class="col-sm-12 text-center" id="home-text">
+                        <h1>NEWS</h1>
+                        <h2 class="subheading">Solving Energy poverty In Africa</h2>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <div class="container mt-5" >
+            <div class="row">
+                <div class="col-lg-8" style="margin-top: 25px;">
+                    <div class="row">
+                        {% for item in art %}
+                            <div class=" article-area col-md-12 mb-5">
+                                    
+                                <h4 class="card-title text-left mb-4">
+                                    <a href="{% url 'news:art_details' slug=item.slug  %}">{{item.title}}</a>
+                                </h4>
+                                <div class="card">
+                                    <img src="{{item.thumb.url}}" class="card-img-top" alt="">
+                                    <div class="card-body" id="card-body">
+                                        <span class="icon-calendar text-muted">&nbsp;{{item.date}}</span>  
+                                        <p class="card-left text-muted">
+                                            {{item.snapshot}}
+                                        </p>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        {% endfor %}  
+                    </div>
+                    
+                </div>
+
+                <div class="sidebar col-lg-4 mt-5 ">
+                    <div class="sidebar-box">
+                        <form action="#" class="search-form">
+                        <div class="form-group">
+                            <span class="icon ion-ios-search"></span>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        </form> 
+                    </div>
+                    
+                    <div class="sidebar-box">
+                        <h3 class="heading text-muted">Recent news</h3>
+                        {% for item in art %}  
+                            <div class="block-21 mb-4 d-flex">
+                                <img class="recent-news-img mr-2" src="{{item.thumb.url}}" alt="">
+                                <div class="text">
+                                    <h3 class="heading-1 text-muted"><a href="{% url 'news:art_details' slug=item.slug  %}"">{{item.title}}</a></h3>
+                                    <div class="meta">
+                                        <div><a href="#"><span class="icon-calendar"></span>{{item.date}}</a></div>
+                                        <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+                                    </div>
+                                </div>   
+                            </div>
+                        {% endfor %}
+                    </div>
+                                        
+                </div>
+            </div>
+        </div>
+    </section>
+{%endblock%}
